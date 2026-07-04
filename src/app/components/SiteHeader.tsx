@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { site } from "@/lib/config";
 import { whatsappLink } from "@/lib/whatsapp";
+import BrandMark from "./BrandMark";
 
 const links = [
   { href: "#catalogo", label: "Catálogo" },
@@ -29,11 +30,14 @@ export default function SiteHeader() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-        <a href="#top" className="leading-none">
-          <span className="block font-display text-2xl tracking-tight text-olive">
-            {site.name}
+        <a href="#top" className="flex items-center gap-2.5 leading-none">
+          <BrandMark className="h-9 w-9 shrink-0 text-olive" />
+          <span className="flex flex-col">
+            <span className="block font-display text-2xl tracking-tight text-olive">
+              {site.name}
+            </span>
+            <span className="eyebrow text-[0.58rem] text-sage-dark">Florería</span>
           </span>
-          <span className="eyebrow text-[0.58rem] text-sage-dark">Florería</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
