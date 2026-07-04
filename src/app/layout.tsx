@@ -21,6 +21,11 @@ const body = Hanken_Grotesk({
 export const metadata: Metadata = {
   title: `${site.name} · Florería en ${site.city}`,
   description: site.tagline,
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: `${site.name} · Florería`,
     description: site.tagline,
